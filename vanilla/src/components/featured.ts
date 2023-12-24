@@ -8,7 +8,7 @@ const Featured = `
   </section>
 
   <section class="grid grid-cols-12 gap-1">
-    <div class="col-span-5">
+    <div class="card col-span-5">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2 h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦47.5m</span>
 
@@ -33,7 +33,7 @@ const Featured = `
       </div>
     </div>
 
-    <div class="col-span-4">
+    <div class="card col-span-4">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2  h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦125m</span>
 
@@ -58,7 +58,7 @@ const Featured = `
       </div>
     </div>
 
-    <div class="col-span-3">
+    <div class="card col-span-3">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2  h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦200m</span>
 

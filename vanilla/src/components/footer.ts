@@ -1,3 +1,5 @@
+import suruHomesLogo from "/assets/suru-logo-white.png";
+
 // social logos
 import XLogo from "/assets/x-white.svg";
 import InLogo from "/assets/linkedIn-circled-white.svg";
@@ -13,7 +15,7 @@ const Footer = `
 
       <div class="flex-1 flex justify-between mb-24">
         <div class="flex">
-          <nav class="mr-24">
+          <nav class="mr-24 leading-9">
             <ul>
               <li><a href="/">About</a></li>
               <li><a href="/">Homes</a></li>
@@ -22,7 +24,7 @@ const Footer = `
             </ul>
           </nav>
 
-          <nav>
+          <nav class="leading-9">
             <ul>
               <li><a href="/">Projects</a></li>
               <li><a href="/">Blog</a></li>
@@ -49,8 +51,8 @@ const Footer = `
         </nav>
       </div>
 
-      <div class="flex justify-between">
-        <p>SURU Homes</p>
+      <div class="flex justify-between items-center">
+        <img src="${suruHomesLogo}" class="logo" alt="Suru Homes logo" />
 
         <nav>
           <a class="mr-2" href="/">Terms</a> <a href="/">Policy</a>
