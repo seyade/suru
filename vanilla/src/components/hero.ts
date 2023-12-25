@@ -4,8 +4,7 @@ import Home3 from "/assets/home-1.jpeg";
 const Hero = `
   <section class="col-span-12 grid grid-cols-12 gap-1 min-h-[545px]">
     <div class="flex flex-col justify-end col-span-6">
-      <h1 class="relative z-10 text-[#2c1327] font-bold bg-white rounded-3xl mb-36 py-6">
-        <div class="h-[24px] bg-slate-500 absolute z-10 -top-6 right-[130px] rounded-bl-3xl">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      <h1 class="text-reveal-stagger relative z-10 text-[#2c1327] font-bold bg-white rounded-3xl mb-36 py-6 pr-1">
         Experience Unrivaled Real Estate Excellence
       </h1>
       <a href="/" class="text-[#2c1327] bg-[#f1f0ee] rounded-full px-6 py-4 inline-flex items-center w-fit hover:bg-[#e4e2df] transition ease-in-out duration-500">

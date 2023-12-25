@@ -121,3 +121,33 @@ footer {
 		animation-range: contain 0% contain 50%;
 	}
 }
+
+// text reveal animation with GSAP
+.char {
+	transform: translateY(7rem);
+	transition: transform 300ms;
+	opacity: 0;
+}
+
+.text-reveal-stagger {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+// general animation with GSAP
+.element-reveal {
+	opacity: 0;
+	transform: translateY(5vh);
+	transition: opacity 300ms;
+}
+
+.element-reveal-scale {
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 300ms;
+}
+
+.element-reveal-slide-up {
+	opacity: 0;
+	transform: translateY(5vh);
+	transition: opacity 300ms;
+}
