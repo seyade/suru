@@ -73,6 +73,9 @@ button {
 			justify-content: center;
 			padding: 6px 8px;
 
+			@media only screen and (max-width: 767px) {
+			}
+
 			&:hover::before {
 				content: "";
 				position: absolute;
@@ -91,6 +94,7 @@ button {
 			z-index: 5;
 			width: 100%;
 			text-decoration: none;
+			transition: transform ease-in-out 300ms;
 		}
 	}
 }
@@ -131,12 +135,21 @@ footer {
 
 .text-reveal-stagger {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	opacity: 0;
+	transform: translateY(5vh);
+	transition: opacity 300ms;
 }
 
 // general animation with GSAP
 .element-reveal {
 	opacity: 0;
 	transform: translateY(5vh);
+	transition: opacity 300ms;
+}
+
+.element-reveal-down {
+	opacity: 0;
+	transform: translateY(-5vh);
 	transition: opacity 300ms;
 }
 

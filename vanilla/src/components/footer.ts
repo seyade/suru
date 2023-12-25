@@ -8,14 +8,14 @@ import InstaLogo from "/assets/instagram-white.svg";
 
 const Footer = `
   <footer class="grid grid-cols-12 mt-20 pb-5 text-white">
-    <div class="col-span-12 px-28 py-11 rounded-xl bg-[#2c1327]">
+    <div class="col-span-12 px-8 md:px-28 py-11 rounded-xl bg-[#2c1327]">
       <h2 class="text-4xl pb-11 mb-9 text-center border-b">
         Nothing Less Than Excellence
       </h2>
 
-      <div class="flex-1 flex justify-between mb-24">
-        <div class="flex">
-          <nav class="mr-24 leading-9">
+      <div class="flex-1 md:flex justify-between mb-24 text-center md:text-left">
+        <div class="md:flex">
+          <nav class="md:mr-24 leading-9">
             <ul>
               <li><a href="/">About</a></li>
               <li><a href="/">Homes</a></li>
@@ -34,7 +34,7 @@ const Footer = `
           </nav>
         </div>
 
-        <div>
+        <div class="my-20 md:m-0">
           <p>Suru House</p> 
           <p>2, Shonny Highway,</p>
           <p>Shonibare Estate,</p>
@@ -43,7 +43,7 @@ const Footer = `
           <p class="font-bold">info@suruhomes.com</p>
         </div>
 
-        <nav class="flex">
+        <nav class="flex justify-center md:justify-normal">
           <a href="/" class="mr-5"><img src="${XLogo}" width="42px" /></a>
           <a href="/" class="mr-5"><img src="${InLogo}" width="42px" /></a>
           <a href="/" class="mr-5"><img src="${InstaLogo}" width="42px" /></a>
@@ -51,10 +51,10 @@ const Footer = `
         </nav>
       </div>
 
-      <div class="flex justify-between items-center">
-        <img src="${suruHomesLogo}" class="logo" alt="Suru Homes logo" />
+      <div class="md:flex justify-center md:justify-between items-center text-center md:text-left">
+        <img src="${suruHomesLogo}" class="logo inline-block" alt="Suru Homes logo" />
 
-        <nav>
+        <nav class="my-10 md:my-0">
           <a class="mr-2" href="/">Terms</a> <a href="/">Policy</a>
         </nav>
 

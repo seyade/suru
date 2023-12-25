@@ -12,17 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	requestAnimationFrame(raf);
 
-	const textSplitted = new SplitType(".text-reveal-stagger");
-
 	gsap.registerPlugin(ScrollTrigger);
 
-	gsap.to(".char", {
-		scrollTrigger: ".char",
-		y: 0,
-		stagger: 0.07,
-		delay: 0.2,
-		duration: 0.1,
+	gsap.to(".text-reveal-stagger", {
+		duration: 0.3,
 		opacity: 1,
+		y: 0,
+	});
+
+	gsap.to(".element-reveal-down", {
+		y: 0,
+		opacity: 1,
+		delay: 0.2,
+		duration: 0.3,
 	});
 
 	function onTriggeredByScroll(element: string, options: any) {
@@ -35,12 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		});
 	}
-
-	onTriggeredByScroll(".element-reveal-scale", {
-		opacity: 1,
-		duration: 0.7,
-		transform: "scale(1)",
-	});
 
 	onTriggeredByScroll(".element-reveal-slide-up", {
 		opacity: 1,
@@ -57,5 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			duration: 0.3,
 			y: 0,
 		});
+	});
+
+	const menuButton = document.querySelector("#menu-button");
+	const menu = document.querySelector("#menu");
+
+	menuButton?.addEventListener("click", () => {
+		menu?.classList.toggle("hidden");
 	});
 });

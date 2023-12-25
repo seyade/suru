@@ -4,11 +4,11 @@ import Home1 from "/assets/home-5.jpg";
 
 const Featured = `
   <section class="flex justify-between mt-20 mb-8">
-    <h2 class="element-reveal-slide-up text-[#58254e] text-4xl pr-60">Featured Properties</h2>
+    <h2 class="element-reveal-slide-up text-[#58254e] text-4xl md:pr-60">Featured Properties</h2>
   </section>
 
   <section class="featured grid grid-cols-12 gap-1">
-    <div class="element-reveal col-span-5">
+    <div class="element-reveal col-span-full md:col-span-5">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2 h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦47.5m</span>
 
@@ -33,7 +33,7 @@ const Featured = `
       </div>
     </div>
 
-    <div class="element-reveal col-span-4">
+    <div class="element-reveal col-span-full  md:col-span-4">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2  h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦125m</span>
 
@@ -58,7 +58,7 @@ const Featured = `
       </div>
     </div>
 
-    <div class="element-reveal col-span-3">
+    <div class="element-reveal col-span-full md:col-span-3">
       <div class="relative rounded-xl bg-[#f1f0ee] text-[#58254e] p-2  h-[414px]">
         <span class="inline-block absolute top-5 left-5 text-[#58254e] font-semibold bg-white rounded-3xl px-4 py-1">₦200m</span>
 
